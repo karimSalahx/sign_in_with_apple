@@ -99,6 +99,7 @@ class SignInWithAppleButton extends StatelessWidget {
       text,
       textAlign: TextAlign.center,
       style: const TextStyle(
+        inherit: false,
         color: Color(0xFF434343),
         fontSize: 18,
         fontFamily: 'Nunito',
