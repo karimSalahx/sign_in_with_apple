@@ -132,21 +132,18 @@ class SignInWithAppleButton extends StatelessWidget {
     switch (iconAlignment) {
       case IconAlignment.center:
         children = [
+          const SizedBox(width: 45),
           appleIcon,
-          Flexible(
-            child: textWidget,
-          ),
+          const SizedBox(width: 25),
+          textWidget,
         ];
         break;
       case IconAlignment.left:
         children = [
+          const SizedBox(width: 45),
           appleIcon,
-          Expanded(
-            child: textWidget,
-          ),
-          SizedBox(
-            width: _appleIconSizeScale * height,
-          ),
+          const SizedBox(width: 25),
+          textWidget,
         ];
         break;
     }
